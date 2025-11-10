@@ -42,6 +42,7 @@ nav{
     gap:5vw;
     transition:width 0.6s linear;
     width: 100%;
+    font-size: 1.5vw;
 }
 
 nav a{
@@ -202,7 +203,7 @@ section{
     display: flex;
     justify-content: center;
     gap:5%;
-    margin-top:-8%;
+    margin-top:-6%;
     box-sizing: border-box;
 }
 
@@ -215,7 +216,7 @@ section{
 
 @media(min-width:1000px) and (max-width:1300px){
     .intro2{
-        margin-top:-5%;
+        margin-top:-3%;
         gap:0%;
     }
 }
@@ -434,19 +435,137 @@ section{
     transition: 0.5s ease;
 }
 
-.bart1:hover{
-    width:90%;
+@media(min-width:1200px){
+    .bart1:hover{
+        width:90%;
+    }
+
+    .bart2:hover{
+        width:83%;
+    }
+
+    .bart3:hover{
+        width:27%;
+    }
 }
 
-.bart2:hover{
-    width:83%;
-}
-
-.bart3:hover{
-    width:27%;
+@media (max-width:1199px){
+    .bart1{
+        width:90%;
+    }
+    .bart2{
+        width:83%;
+    }
+    .bart3{
+        width: 27%;
+    }
 }
 
 .divider3{
     width:90%;
     margin:10% 5%;
+}
+
+#project {
+    margin: -10% 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+#project h1{
+    text-align: center;
+    font-size: 3.5vw;
+    font-family: Audiowide;
+    background:linear-gradient(to bottom,rgb(76, 0, 0),rgb(194, 0, 0));
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card {
+    width: 50%;
+    background-color: white;
+    border-radius: 1%;
+    border: 1px solid black;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    padding: 0% 2%;
+    border: 1px solid black;
+    font-size: 0.8vw;
+    background-color: rgb(245, 245, 245);
+}
+
+.card-header h3{
+    margin-left: 20%;
+}
+
+.card-header a{
+    margin: 0% 2%;
+    height:200%;
+}
+
+.card img{
+    width:100%;
+    height: auto;
+    display: block;
+}
+
+.card-body{
+    border-top: 1px solid black;
+    padding-left: 4%;
+}
+
+.card-body h2{
+    font-size: 1.5vw;
+}
+
+.card-body p{
+    font-size: 1vw;
+}
+
+.left, .right{
+    margin-top: -1%;
+    width: 7%;
+    height:30%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15%;
+    transition: 0.5s ease;
+}
+
+.left:hover, .right:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+}
+
+.divider4{
+    width:90%;
+    margin:15% 5%;
+}
+
+#cookie{
+    display: flex;
+    flex-direction: column;
+    width:20%;
+    margin-left: 35%;
+    margin-top: -13%;
+}
+
+#cookie h1{
+    text-align: center;
+    white-space: nowrap;
+    font-size: 3vw;
+    color: rgb(98, 0, 0);
+}
+
+#cookie img{
+    margin-left: 20%;
 }
