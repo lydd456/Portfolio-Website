@@ -487,6 +487,7 @@ section{
     background-color: white;
     border-radius: 1%;
     border: 1px solid black;
+    display: none;
 }
 
 .card-header{
@@ -568,4 +569,8 @@ section{
 
 #cookie img{
     margin-left: 20%;
+}
+
+.active{
+    display: block;
 }
