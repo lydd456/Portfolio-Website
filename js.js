@@ -3,6 +3,8 @@ const nav=document.querySelector(".nav");
 
 toggle.addEventListener('click', () => {
     nav.classList.toggle('active');
+    document.body.classList.toggle("nav-open");
+    //on css there's body.nav-open{overflow:hidden;}, this triggers that
 });
 
 var left = document.getElementsByClassName("left")[0];
@@ -37,3 +39,16 @@ left.onclick = function(){
         showSlide(i);
     }
 } //the condition makes sure you don't go before the first card
+
+const links = document.querySelectorAll(".nav a");
+
+links.forEach(link => {
+    link.addEventListener("click",()=>{
+        nav.classList.remove("active");
+        document.body.classList.remove("nav-open");
+    });
+});
+
+//forEach is used to loop arrays or lists, meaning "for each item in this list, do something"
+//when any link is clicked, the nav is not active, which removes the nav screen block
+//it also removes the overflow hidden
