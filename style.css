@@ -62,7 +62,7 @@ nav.active {
     margin-right: 5%;
 }
 
-@media (max-width:650px){
+@media (max-width:750px){
     nav.active{
         position: fixed;
         top: 0;
@@ -157,7 +157,7 @@ section{
     }
 }
 
-@media (max-width:650px){
+@media (max-width:780px){
     .intro{
         flex-direction: column;
         align-items: center;
@@ -266,25 +266,13 @@ section{
     box-sizing: border-box;
 }
 
-@media (max-width:500px){
+@media (max-width:780px){
     .intro2{
         display: none;
     }
 }
 
-@media (min-width:501px) and (max-width:650px){
-    .intro2{
-        margin-top: -8%;
-        margin-left: 3%;
-        margin-right: 3%;
-        margin-bottom: 8%;
-        gap:10%;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media (min-width:651px) and (max-width:999px){
+@media (min-width:781px) and (max-width:999px){
     .intro2{
         margin-top: 0%;
         gap:0%;
@@ -367,9 +355,15 @@ section{
     margin: -6% auto;
 }
 
-@media (max-width:500px){
+@media (min-width:551px) and (max-width:780px){
     .divider1{
-        margin-top: 5%;
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:550px){
+    .divider1{
+        margin-top: 15%;
     }
 }
 
@@ -416,7 +410,7 @@ section{
     color:rgb(76,0,0);
 }
 
-@media (max-width:650px){
+@media (max-width:780px){
     .explain{
         gap: 8%;
         margin-right: 8%;
@@ -575,7 +569,7 @@ section{
     }
 }
 
-@media (max-width:650px){
+@media (max-width:780px){
     
     .education h3{
         font-size: 1.5vw;
@@ -703,7 +697,7 @@ section{
     justify-content: center;
 }
 
-@media (max-width:650px){
+@media (max-width:780px){
     .card{
         width:75%;
     }
