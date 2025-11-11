@@ -267,8 +267,8 @@ section{
 }
 
 @media (max-width:500px){
-    .intro2{
-        display: none; 
+    body{
+        display:none;
     }
 }
 
